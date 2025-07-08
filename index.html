@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kareenu — Start Coding</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .typing {
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3.5s steps(40, end) forwards, blink 0.7s step-end infinite;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 20px auto 30px;
+      color: #ccc;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .highlight {
+      color: #ff4a57;
+      font-weight: bold;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1rem;
+      background-color: #ff4a57;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px #ff4a57;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #ff4a57;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+        padding: 12px 25px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="typing">Hey Kareenu 🦋 </h1>
+  <p>
+    You have the power to build amazing things from just your keyboard. 
+    <span class="highlight">Coding</span> isn't just about computers — it's about <span class="highlight">creativity, confidence, and courage</span>.  
+    And I truly believe, <span class="highlight">you’ve got it all</span>.
+  </p>
+
+  <button class="btn" onclick="startCoding()">Start Coding Now 💡</button>
+
+  <div class="footer">Made just for you, Kareenu 🦋</div>
+
+  <script>
+    function startCoding() {
+      alert("Let’s go Kareenu! 🚀 You've got this.");
+      window.open("https://www.freecodecamp.org/learn", "_blank");
+    }
+  </script>
+</body>
+</html>
